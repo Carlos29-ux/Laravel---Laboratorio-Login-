@@ -7,52 +7,84 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+Universidad Tecnológica de Panamá
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Facultad de Ingeniería de Sistemas Computacionales
+Curso: Desarrollo de Software VII
+Instructor: Irina Fong
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Fecha de Ejecución:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+15 de Abril de 2026
 
-## Learning Laravel
+## Objetivos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+• Comprender la importancia de la documentación en proyectos de desarrollo de software. 
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+• Consolidar el aprendizaje de la arquitectura Modelo-Vista-Controlador (MVC) en Laravel. 
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+• Evidenciar el proceso de configuración e implementación del módulo de login en Laravel. 
 
-## Agentic Development
+• Identificar las dificultades encontradas durante el laboratorio y las soluciones aplicadas. 
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## Introducción
 
-```bash
-composer require laravel/boost --dev
+Laravel es un framework de desarrollo web basado en PHP que facilita la creación de aplicaciones modernas, seguras y escalables. Este framework utiliza el patrón de arquitectura Modelo-Vista-Controlador (MVC), el cual permite separar las responsabilidades del sistema en diferentes componentes, mejorando la organización del código.
 
-php artisan boost:install
-```
+En este laboratorio se desarrolló un sistema de autenticación (login y registro) utilizando el framework Laravel. El objetivo principal fue aplicar el patrón de arquitectura Modelo-Vista-Controlador (MVC), el cual permite organizar el código de manera estructurada y eficiente.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Durante el desarrollo del laboratorio, se configuró el entorno de trabajo, se instalaron las dependencias necesarias y se implementó el sistema de autenticación para permitir el registro e inicio de sesión de usuarios.
 
-## Contributing
+## ⚙️ Requisitos Previos
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Para la ejecución del laboratorio se requiere contar con el siguiente ecosistema de desarrollo:
 
-## Code of Conduct
+### Tecnologías utilizadas
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- 🐘 PHP 8.0 o superior  
+- 📦 Composer (última versión estable)  
+- ⚙️ Laravel (framework PHP)  
+- 🌐 Servidor web: Apache   
+- 🛢️ Base de datos MySQL  
+- 💻 Entorno de desarrollo local: XAMPP / WampServer 
+- 📝 Editor de código: Visual Studio Code  
+- 🟢 Node.js y NPM (para manejo de dependencias frontend)  
 
-## Security Vulnerabilities
+### 🖥️ Sistema Operativo
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Windows 10 / 11  
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
