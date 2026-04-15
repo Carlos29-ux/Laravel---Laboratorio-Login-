@@ -99,10 +99,11 @@ cp .env.example .env
 Luego se configura la base de datos:
 
 ```env
-DB_DATABASE=login_db
+DB_DATABASE=example_app
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=kamado29
 ```
+En mi caso, tiene contraseña 
 
 Este paso es fundamental, ya que permite la conexión entre Laravel y la base de datos.
 
