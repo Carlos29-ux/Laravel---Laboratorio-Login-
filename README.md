@@ -54,6 +54,193 @@ Para la ejecución del laboratorio se requiere contar con el siguiente ecosistem
 
 - Windows 10 / 11  
 
+## 🔧 Instalación y configuración del proyecto
+
+A continuación, se describe el proceso completo para instalar y ejecutar el proyecto Laravel desde cero. Estos pasos permiten que cualquier usuario pueda clonar el repositorio y poner en funcionamiento la aplicación correctamente.
+
+---
+
+### 1. Clonar o crear el proyecto
+
+Si el proyecto ya está en un repositorio, se debe clonar:
+
+```bash
+git clone URL_DEL_REPOSITORIO
+cd login-app
+```
+
+Si se crea desde cero:
+
+```bash
+laravel new login-app
+```
+
+---
+
+### 2. Instalación de dependencias (Composer)
+
+```bash
+composer install
+```
+
+Este comando instala todas las dependencias del proyecto definidas en el archivo `composer.json`.
+Las librerías se descargan en la carpeta `vendor/`, necesaria para el funcionamiento del sistema.
+
+---
+
+### 3. Configuración del archivo `.env`
+
+Laravel utiliza un archivo `.env` para manejar variables de entorno.
+
+Primero, se debe crear copiando el archivo de ejemplo:
+
+```bash
+cp .env.example .env
+```
+
+Luego se configura la base de datos:
+
+```env
+DB_DATABASE=login_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Este paso es fundamental, ya que permite la conexión entre Laravel y la base de datos.
+
+---
+
+### 4. Generación de la clave de la aplicación
+
+```bash
+php artisan key:generate
+```
+
+Este comando genera una clave única (`APP_KEY`) necesaria para la seguridad de la aplicación, como la encriptación de datos y manejo de sesiones.
+
+---
+
+### 5. Ejecución de migraciones
+
+```bash
+php artisan migrate
+```
+
+Las migraciones crean automáticamente las tablas en la base de datos (usuarios, contraseñas, etc.).
+Laravel registra cuáles migraciones ya fueron ejecutadas para evitar duplicados.
+
+---
+
+### 6. Limpieza de configuración (opcional pero recomendado)
+
+```bash
+php artisan config:clear
+php artisan config:cache
+```
+
+Se utiliza para asegurar que los cambios realizados en el archivo `.env` sean reconocidos por el sistema.
+
+---
+
+## Implementación del sistema de autenticación
+
+Para agregar el login y registro se utilizó Laravel UI:
+
+```bash
+composer require laravel/ui
+php artisan ui bootstrap --auth
+```
+
+Este proceso genera automáticamente:
+
+* Formularios de login
+* Registro de usuarios
+* Recuperación de contraseña
+
+---
+
+### 7. Instalación de dependencias frontend
+
+```bash
+npm install
+npm run dev
+```
+
+Estos comandos instalan y compilan los archivos necesarios para la interfaz (CSS y JavaScript).
+Si este paso no se ejecuta, la aplicación puede mostrar errores visuales.
+
+---
+
+### 8. Ejecución del servidor
+
+```bash
+php artisan serve
+```
+
+Finalmente, se inicia el servidor de desarrollo.
+
+La aplicación estará disponible en:
+
+http://127.0.0.1:8000/
+
+
+## 🏗️ Arquitectura MVC en Laravel
+
+Laravel utiliza el patrón de arquitectura Modelo-Vista-Controlador (MVC), el cual permite organizar el código separando responsabilidades y facilitando el mantenimiento de la aplicación.
+
+A continuación, se describen las principales carpetas utilizadas en este laboratorio:
+
+### 📁 Modelos (Models)
+
+Se encuentran en la carpeta app/Models.
+Son los encargados de manejar la lógica de datos y la interacción con la base de datos.
+Cada modelo representa una tabla en la base de datos.
+
+### 🎨 Vistas (Views)
+
+Se ubican en la carpeta resources/views.
+Son las encargadas de mostrar la información al usuario mediante interfaces gráficas, generalmente utilizando archivos Blade (.blade.php).
+
+### 🧠 Controladores (Controllers)
+
+Se encuentran en app/Http/Controllers.
+Gestionan la lógica de la aplicación, conectando los modelos con las vistas.
+
+### 🔗 Rutas (Routes)
+
+Se definen en el archivo routes/web.php.
+Permiten definir las URL del sistema y conectar las solicitudes del usuario con los controladores.
+
+## 🔄 Migraciones
+
+Las migraciones permiten crear y modificar la estructura de la base de datos de forma automática.
+
+Durante el laboratorio se utilizaron los siguientes comandos:
+
+php artisan migrate
+
+Este comando ejecuta todas las migraciones pendientes y crea las tablas necesarias en la base de datos, como la tabla de usuarios.
+
+En caso de ser necesario reiniciar la base de datos, se puede utilizar:
+
+php artisan migrate:fresh
+
+Este comando elimina todas las tablas y las vuelve a crear desde cero.
+
+## 🎯 Objetivo del laboratorio
+
+Implementar un sistema de autenticación (registro e inicio de sesión) utilizando Laravel, aplicando el patrón de arquitectura MVC, con el fin de comprender la estructura del framework y su funcionamiento en aplicaciones web modernas.
+
+## 🖼️ Resultado
+
+A continuación se muestra la interfaz del sistema de autenticación implementado:
+
+![Login](images/login.png)
+
+
+
+
+
 
 
 
