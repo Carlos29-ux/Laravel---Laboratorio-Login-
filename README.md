@@ -7,11 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-Universidad Tecnológica de Panamá
+# Universidad Tecnológica de Panamá
 
-Facultad de Ingeniería de Sistemas Computacionales
+# Facultad de Ingeniería de Sistemas Computacionales
 
-Fecha de Ejecución:
+## Fecha de Ejecución:
 
 15 de Abril de 2026
 
@@ -248,7 +248,9 @@ Para el desarrollo del laboratorio se utilizó el sistema de gestión de base de
 Durante el laboratorio se utilizaron los siguientes comandos relacionados con la base de datos:
 
 php artisan migrate
+
 php artisan migrate:fresh
+
 php artisan config:clear
 
 Estos comandos permitieron crear, actualizar y asegurar el correcto funcionamiento de la base de datos.
@@ -273,15 +275,23 @@ Solución:
 
 Se instalaron y compilaron las dependencias frontend con:
 
+```bash
 npm install
+```
+
+```bash
 npm run dev
+```
 
 ### Error: Dependencias no instaladas
 
 El proyecto no funcionaba correctamente debido a que no se habían instalado las dependencias necesarias.
 
 Solución:
+
+```bash
 composer install
+```
 
 Esto permitió instalar todas las librerías requeridas por Laravel.
 
@@ -300,8 +310,11 @@ Laravel - Validation. (s. f.). https://www.tutorialspoint.com/laravel/laravel_v
 Este laboratorio ha sido desarrollado por el estudiante de la Universidad Tecnológica de Panamá:
 
 Nombre: Carlos Concepción
+
 Correo: carlos.concepcion2@utp.ac.pa
+
 Curso: Desarrollo de Software VII
+
 Instructor: Irina Fong
 
 
