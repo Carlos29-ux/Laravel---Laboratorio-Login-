@@ -10,8 +10,6 @@
 Universidad Tecnológica de Panamá
 
 Facultad de Ingeniería de Sistemas Computacionales
-Curso: Desarrollo de Software VII
-Instructor: Irina Fong
 
 Fecha de Ejecución:
 
@@ -217,13 +215,17 @@ Las migraciones permiten crear y modificar la estructura de la base de datos de 
 
 Durante el laboratorio se utilizaron los siguientes comandos:
 
+```bash
 php artisan migrate
+```
 
 Este comando ejecuta todas las migraciones pendientes y crea las tablas necesarias en la base de datos, como la tabla de usuarios.
 
 En caso de ser necesario reiniciar la base de datos, se puede utilizar:
 
+```bash
 php artisan migrate:fresh
+```
 
 Este comando elimina todas las tablas y las vuelve a crear desde cero.
 
@@ -236,6 +238,74 @@ Implementar un sistema de autenticación (registro e inicio de sesión) utilizan
 A continuación se muestra la interfaz del sistema de autenticación implementado:
 
 ![Login](images/login.png)
+
+## 🗄️ Base de Datos
+
+Para el desarrollo del laboratorio se utilizó el sistema de gestión de base de datos MySQL, el cual permitió almacenar la información de los usuarios registrados en el sistema de autenticación.
+
+### 🛠️ Comandos utilizados
+
+Durante el laboratorio se utilizaron los siguientes comandos relacionados con la base de datos:
+
+php artisan migrate
+php artisan migrate:fresh
+php artisan config:clear
+
+Estos comandos permitieron crear, actualizar y asegurar el correcto funcionamiento de la base de datos.
+
+### 💾 Respaldo de la Base de Datos
+
+Se realizó un respaldo (backup) de la base de datos utilizando phpMyAdmin, exportando la base de datos en formato .sql.
+
+Este archivo de respaldo se incluye dentro del repositorio del proyecto, permitiendo restaurar la base de datos en caso de ser necesario.
+
+Nombre del Archivo: example_app.sql
+
+## ⚠️ Dificultades y Soluciones
+
+Durante el desarrollo del laboratorio se presentaron algunos problemas comunes, los cuales fueron solucionados de la siguiente manera:
+
+### Error: Vite manifest not found
+
+Al ejecutar el proyecto, se presentó un error indicando que no se encontraba el archivo manifest.json.
+
+Solución:
+
+Se instalaron y compilaron las dependencias frontend con:
+
+npm install
+npm run dev
+
+### Error: Dependencias no instaladas
+
+El proyecto no funcionaba correctamente debido a que no se habían instalado las dependencias necesarias.
+
+Solución:
+composer install
+
+Esto permitió instalar todas las librerías requeridas por Laravel.
+
+## 📚 Referencias
+
+A continuación, algunas de las fuentes consultadas para el desarrollo del laboratorio:
+
+Laravel. (2026). Documentación oficial de Laravel. https://laravel.com/docs
+
+Stack Overflow. (2026). Preguntas y respuestas sobre errores comunes en Laravel. https://stackoverflow.com
+
+Laravel - Validation. (s. f.). https://www.tutorialspoint.com/laravel/laravel_validation.htm
+
+## 👤 Información del Estudiante
+
+Este laboratorio ha sido desarrollado por el estudiante de la Universidad Tecnológica de Panamá:
+
+Nombre: Carlos Concepción
+Correo: carlos.concepcion2@utp.ac.pa
+Curso: Desarrollo de Software VII
+Instructor: Irina Fong
+
+
+
 
 
 
